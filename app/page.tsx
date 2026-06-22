@@ -3,6 +3,7 @@ import { Card } from '@/components/ui/card'
 import { Spotlight } from '@/components/ui/spotlight'
 import { SplineScene } from '@/components/ui/splite'
 import { ShaderAnimation } from '@/components/ui/neno-shader'
+import { HeroScrollDemo } from '@/components/ui/hero-scroll-demo'
 
 export default function Home() {
   return (
@@ -65,6 +66,14 @@ export default function Home() {
                   Gaming vibe shader after the hero section
                 </h2>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-3xl border border-white/10 bg-slate-950/80 p-4 shadow-2xl">
+          <div className="overflow-hidden rounded-3xl bg-black">
+            <div className="relative w-full">
+              <HeroScrollDemo />
             </div>
           </div>
         </section>

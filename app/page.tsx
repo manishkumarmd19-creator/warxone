@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 import { Spotlight } from '@/components/ui/spotlight'
 import { SplineScene } from '@/components/ui/splite'
@@ -16,6 +17,15 @@ export default function Home() {
           <p className="mx-auto max-w-3xl text-base text-slate-300 sm:text-lg">
             Use a responsive 3D spline scene with ambient motion and spotlight effects to make your hero section feel alive.
           </p>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <Link
+              href="/demo-one"
+              className="rounded-full bg-slate-200 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-300"
+            >
+              View shader demo
+            </Link>
+            <span className="text-sm text-slate-400">or explore the 3D Spline hero above.</span>
+          </div>
         </div>
 
         <Card className="relative overflow-hidden border border-white/10 bg-black/75 shadow-2xl">

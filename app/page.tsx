@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Card } from '@/components/ui/card'
 import { Spotlight } from '@/components/ui/spotlight'
 import { SplineScene } from '@/components/ui/splite'
+import { ShaderAnimation } from '@/components/ui/neno-shader'
 
 export default function Home() {
   return (
@@ -51,6 +52,22 @@ export default function Home() {
             </div>
           </div>
         </Card>
+
+        <section className="mt-12 rounded-3xl border border-white/10 bg-slate-950/80 p-4 shadow-2xl">
+          <div className="overflow-hidden rounded-3xl bg-black">
+            <div className="relative h-[520px] w-full">
+              <ShaderAnimation />
+              <div className="absolute inset-x-0 bottom-0 rounded-b-3xl bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 text-center">
+                <p className="text-sm uppercase tracking-[0.35em] text-slate-400">
+                  Shader animation experience
+                </p>
+                <h2 className="mt-2 text-3xl font-semibold text-white sm:text-4xl">
+                  Gaming vibe shader after the hero section
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
   )
